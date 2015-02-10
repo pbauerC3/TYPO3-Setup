@@ -1,0 +1,29 @@
+@mixin noTextDecoration($size, $weight, $color, $transCase) {
+	text-decoration: none;
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+	text-transform: $transCase;
+}
+
+@mixin fontSmoothing() {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin doTransistion($time) {
+	-webkit-transition: all ease-in-out;
+	-moz-transition: all ease-in-out;
+	-ms-transition: all ease-in-out;
+	-o-transition: all ease-in-out;
+	transition: all ease-in-out;
+	transition-duration: $time;
+	-webkit-transition-duration: $time; /* Safari */
+}
+
+@mixin boxSizing($sizing) {
+	box-sizing: $sizing;
+	-o-box-sizing: $sizing;
+	-webkit-box-sizing: $sizing;
+	-moz-box-sizing: $sizing;
+}

@@ -1,0 +1,88 @@
+//Grid 50/50
+.grid50_img_50 {
+	width: 100%;
+
+	.left_50, .right_50 {
+		width: 42%;
+		box-sizing: border-box;
+		display: inline-block;
+
+		.csc-textpic-imagecolumn {
+			width: 45%;
+
+			&.csc-textpic-firstcol {
+				float: left;
+			}
+
+			&.csc-textpic-lastcol {
+				float: right;
+			}
+
+			figure {
+				border: 1px solid $grey;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+
+	.middle_img {
+		width: 16%;
+		display: inline-block;
+
+		figure {
+			width: 165px;
+			height: 165px;
+			border-radius: 50%;
+			border: 5px solid $grey;
+			overflow: hidden;
+
+			img {
+				width: 165px;
+				height: auto;
+			}
+		}
+	}
+
+	.left_50 {
+		padding-right: 2%;
+	}
+
+	.right_50 {
+		padding-left: 2%;
+	}
+}
+
+//Grid 40/60 AND //Grid 60/40
+.grid40_60, .grid60_40 {
+	width: 100%;
+	overflow: hidden;
+
+	//Grid 40/60
+	.left_40 {
+		width: 37%;
+		box-sizing: border-box;
+		float: left;
+	}
+
+	.right_60 {
+		width: 57%;
+		box-sizing: border-box;
+		float: right;
+	}
+
+
+	//Grid 60/40
+	.left_60 {
+		@extend .right_60;
+		float: left;
+	}
+
+	.right_40 {
+		@extend .left_40;
+		float: right;
+	}
+}

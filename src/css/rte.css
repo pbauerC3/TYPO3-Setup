@@ -1,0 +1,12 @@
+.redfont-pattern {
+	color: #A82B3A;
+	font-family: 'merriweather';
+	font-weight: 700;
+	font-size: 1.3em;
+	line-height: 1.6em;
+	background-image: url('../elements/pattern_white_30.png');
+	background-repeat: repeat;
+	display: inline-block;
+	padding: 5px 10px;
+	margin-bottom: 15px;
+}

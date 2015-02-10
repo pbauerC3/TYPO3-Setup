@@ -1,0 +1,61 @@
+nav {
+	font-family: 'merriweather', serif;
+	width: 100%;
+	background-color: #FFF;
+	height: 205px;
+	padding-top: 70px;
+	box-sizing: border-box;
+
+	.legal {
+		font-family: open-sans;
+		position: absolute;
+		top: -70px;
+		right: 0;
+		padding: 10px;
+		text-transform: uppercase;
+		background-image: url('../elements/pattern_black.png');
+		background-repeat: repeat;
+	}
+
+	.logo {
+		display: inline-block;
+	}
+
+	ul {
+		overflow: hidden;
+		display: inline-block;
+		margin-left: 25px;
+
+		li {
+			float: left;
+			margin: 15px 30px;
+
+			&.nav_active {
+				background-color: $red;
+				a {
+					color: #FFF;
+					border: 1px solid $red;
+
+					&:hover {
+						color: #FFF;
+					}
+				}
+			}
+
+			a {
+				@include noTextDecoration(1.5em, 300, $grey, uppercase);
+				@include fontSmoothing();
+				border: 1px solid $grey;
+				padding: 10px 0;
+				width: 195px;
+				text-align: center;
+				display: block;
+
+				&:hover {
+					color: $red;
+					border-color: $red;
+				}
+			}
+		}
+	}
+}
